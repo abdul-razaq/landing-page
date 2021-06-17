@@ -32,6 +32,7 @@ body {
 		),
 		url(images/outdoor.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: left;
 	position: relative;
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
@@ -92,10 +93,13 @@ body {
 	font-size: 3rem;
 	font-weight: 500;
 	text-transform: uppercase;
+	color: #fff;
 	letter-spacing: 0.5rem;
 	padding: 2rem 8rem;
 	cursor: pointer;
 	border-radius: 5rem;
+	background-image: linear-gradient(to right bottom, #e21239, #940a64);
+  background-size: cover;
 }
 
 /* .btn--primary {
