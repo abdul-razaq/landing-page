@@ -1,0 +1,49 @@
+.btn {
+	display: block;
+	margin: 0 auto;
+	font-family: inherit;
+	font-size: 3rem;
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	padding: 2rem 8rem;
+	cursor: pointer;
+	border-radius: 5rem;
+	position: relative;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		border-radius: 5rem;
+		transition: all 0.3s ease-in;
+		animation-fill-mode: backwards;
+	}
+
+	&--gradient {
+		background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+		background-size: cover;
+    background-repeat: no-repeat;
+
+		&::after {
+			background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&:hover::after {
+		transform: scaleX(1.4) scaleY(1.6);
+		opacity: 0;
+	}
+
+	&--animated {
+		animation: moveInFromBottom 0.4s ease-out 0.4s;
+	}
+}
