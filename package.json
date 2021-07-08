@@ -1,0 +1,15 @@
+{
+	"name": "landing-page",
+	"version": "1.0.0",
+	"description": "Landing Page practice website",
+	"main": "index.html",
+	"repository": "https://github.com/abdul-razaq/landing-page.git",
+	"author": "AbdulRazaq Suleiman <razaqayomide01@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"compile:sass": "node-sass --watch sass --recursive --output css"
+	},
+	"devDependencies": {
+		"node-sass": "^6.0.1"
+	}
+}
