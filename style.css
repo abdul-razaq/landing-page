@@ -1,15 +1,4 @@
-*,
-*::after,
-*::before {
-	margin: 0;
-	padding: 0;
-	border: none;
-	outline: none;
-	text-decoration: none;
-	list-style: none;
-	list-style-type: none;
-	box-sizing: inherit;
-}
+
 
 html {
 	box-sizing: border-box;
@@ -71,7 +60,7 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.heading__main {
+.heading--main {
 	font-size: 8rem;
 	letter-spacing: 30px;
 	font-weight: 500;
@@ -80,7 +69,7 @@ body {
 	animation: moveInFromLeft 0.8s ease-out;
 }
 
-.heading__sub {
+.heading--sub {
 	font-size: 3rem;
 	letter-spacing: 1.3rem;
 	display: block;
@@ -122,6 +111,7 @@ body {
 .btn--gradient::after {
 	background-image: linear-gradient(to right bottom, #e21239, #940a64);
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .btn:hover::after {
