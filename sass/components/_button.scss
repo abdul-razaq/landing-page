@@ -11,6 +11,7 @@
 	cursor: pointer;
 	border-radius: 5rem;
 	position: relative;
+	animation-fill-mode: backwards;
 
 	&::after {
 		content: "";
@@ -23,16 +24,23 @@
 		z-index: -1;
 		border-radius: 5rem;
 		transition: all 0.3s ease-in;
-		animation-fill-mode: backwards;
 	}
 
 	&--gradient {
-		background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+		background-image: linear-gradient(
+			to right bottom,
+			$color-primary,
+			$color-secondary
+		);
 		background-size: cover;
-    background-repeat: no-repeat;
+		background-repeat: no-repeat;
 
 		&::after {
-			background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+			background-image: linear-gradient(
+				to right bottom,
+				$color-primary,
+				$color-secondary
+			);
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
