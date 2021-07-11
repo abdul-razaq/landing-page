@@ -1,5 +1,19 @@
 .about {
   margin-top: -15vh;
+  padding-top: 23rem;
   height: 50rem;
   background-color: $color-grey-1;
+
+  .content {
+    background-color: #ddd;
+    max-width: 114rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(53rem, 1fr));
+    column-gap: 8rem;
+
+    & > * {
+      background-color: orangered;
+    }
+  }
 }
