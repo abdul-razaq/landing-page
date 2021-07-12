@@ -1,19 +1,13 @@
 .about {
-  margin-top: -15vh;
-  padding-top: 23rem;
-  height: 50rem;
-  background-color: $color-grey-1;
+	margin-top: -15vh;
+	padding: 23rem 0;
+	background-color: $color-grey-2;
 
-  .content {
-    background-color: #ddd;
-    max-width: 114rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(53rem, 1fr));
-    column-gap: 8rem;
-
-    & > * {
-      background-color: orangered;
-    }
-  }
+	.content {
+		max-width: 114rem;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(56rem, 1fr));
+		column-gap: 2rem;
+	}
 }
