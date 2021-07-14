@@ -1,0 +1,39 @@
+.feature {
+	background-color: #fff;
+	max-width: 23%;
+	padding: 3rem;
+	text-align: center;
+	box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+	border-radius: 4.5px;
+	transition: transform 0.3s ease-out;
+
+	&__icon {
+		margin-bottom: 2rem;
+		font-size: 6rem;
+		color: $color-primary;
+	}
+
+	&__heading {
+		background-image: linear-gradient(
+			to right,
+			$color-primary,
+			$color-secondary
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		transition: transform 0.3s ease-out;
+	}
+
+	&__text {
+		line-height: 1.5;
+	}
+
+	&:hover {
+		transform: translateY(-2rem) scale(1.03);
+	}
+
+	&:hover &__heading {
+		transform: skewY(1.5deg) skewX(1.5deg) scale(1.15);
+	}
+}

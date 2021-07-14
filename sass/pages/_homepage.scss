@@ -1,6 +1,7 @@
 .about {
 	margin-top: -15vh;
-	padding: 23rem 0;
+	padding: 30rem 0;
+	padding-bottom: 45rem;
 	background-color: $color-grey-2;
 
 	.content {
@@ -9,5 +10,27 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(56rem, 1fr));
 		column-gap: 2rem;
+	}
+}
+
+.features {
+	width: 100%;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary, 0.4),
+			rgba($color-secondary, 0.4)
+		),
+		url(../images/nat-4.jpg);
+	transform: skewY(-8deg);
+	margin-top: -15rem;
+	padding: 20rem 0;
+
+	.feature-container {
+		transform: skewY(8deg);
+		max-width: 114rem;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 }
