@@ -11,24 +11,46 @@
 		width: 100%;
 		color: #fff;
 		height: 50rem;
-    transition: all .8s ease-out;
-    backface-visibility: hidden;
+		transition: all 0.8s ease-out;
+		backface-visibility: hidden;
+		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
 
 		&--front {
-			background-color: orangered;
+			background-color: #fff;
 		}
 
 		&--back {
-			background-color: green;
+			background-repeat: no-repeat;
+			background-size: cover;
 			transform: rotateY(180deg);
+
+			&--1 {
+				background-image: linear-gradient(to right bottom, #ff0134, #ec7200);
+			}
+			&--2 {
+				background-image: linear-gradient(to right bottom, #207c5a, #04c425);
+			}
+			&--3 {
+				background-image: linear-gradient(to right bottom, #8e2588, #5156cb);
+			}
 		}
 	}
 
 	&:hover &__side--front {
-		transform: rotateY(180deg);
+		transform: rotateY(-180deg);
 	}
 
 	&:hover &__side--back {
 		transform: rotateY(0);
+	}
+
+	&__image {
+	}
+
+	&__heading {
+	}
+
+	&__details {
 	}
 }
