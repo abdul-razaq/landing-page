@@ -34,3 +34,19 @@
 		justify-content: space-between;
 	}
 }
+
+.tours {
+	background-color: $color-grey-2;
+	max-width: 100%;
+	padding: 25rem 0 15rem 0;
+	margin-top: -12rem;
+
+	.cards {
+		max-width: 114rem;
+		margin: 0 auto;
+		margin-top: 12rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 8rem;
+	}
+}
