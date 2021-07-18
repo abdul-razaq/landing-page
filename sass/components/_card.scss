@@ -14,7 +14,8 @@
 		transition: all 0.8s ease-out;
 		backface-visibility: hidden;
 		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
+		border-radius: 5px;
+		overflow: hidden;
 
 		&--front {
 			background-color: #fff;
@@ -46,11 +47,71 @@
 	}
 
 	&__image {
+		height: 23rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-blend-mode: screen;
+		clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+
+		&--1 {
+			background-image: linear-gradient(to right bottom, #ff0134, #ec7200),
+				url(../images/nat-4.jpg);
+		}
+
+		&--2 {
+			background-image: linear-gradient(to right bottom, #207c5a, #04c425),
+				url(../images/nat-5.jpg);
+		}
+
+		&--3 {
+			background-image: linear-gradient(to right bottom, #8e2588, #5156cb),
+				url(../images/nat-6.jpg);
+		}
 	}
 
 	&__heading {
+		color: $color-white;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 2.8rem;
+		text-align: right;
+		position: absolute;
+		top: 15rem;
+		right: 2rem;
+		width: 75%;
+	}
+
+	&__heading-span {
+		padding: 0rem 1rem;
+		box-decoration-break: clone;
+
+		&--1 {
+			background-image: linear-gradient(to right bottom, #ff0134, #ec7200);
+		}
+
+		&--2 {
+				background-image: linear-gradient(to right bottom, #207c5a, #04c425);
+		}
+
+		&--3 {
+			background-image: linear-gradient(to right bottom, #8e2588, #5156cb);
+		}
 	}
 
 	&__details {
+		color: $color-grey-1;
+		width: 80%;
+		text-align: center;
+		margin: 1rem auto;
+		ul {
+			li {
+				font-size: 1.5rem;
+				padding: 1.5rem;
+				&:not(:last-child) {
+					border-bottom: 1px solid $color-grey-2;
+				}
+			}
+		}
 	}
 }
